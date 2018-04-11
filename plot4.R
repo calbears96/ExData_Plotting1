@@ -12,9 +12,10 @@ household_power_cons = transform(household_power_cons, datetime = strptime(paste
 household_power_cons_2day = subset(household_power_cons, Date=='2007-02-01' | Date=='2007-02-02')
 
 #plot4: 4 graphs in one screen 2 per row
-par(mfrow=c(2,2))
 
-png('./ExData_Plotting1/fourgraphs.png', width = 480, height = 480)
+
+png('./ExData_Plotting1/plot4.png', width = 480, height = 480)
+par(mfrow=c(2,2))
 with(household_power_cons_2day, plot(datetime, Global_active_power, type='l',
                                      ylab='Global Active Power (kilowatts)', lwd=2))
 

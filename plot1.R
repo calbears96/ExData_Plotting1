@@ -15,7 +15,7 @@ household_power_cons_2day = subset(household_power_cons, Date=='2007-02-01' | Da
 par(mfrow=c(1,1))
 
 #plot1: histogram of global active power
-png('./ExData_Plotting1/global_active_power_hist.png', width = 480, height = 480)
+png('./ExData_Plotting1/plot1.png', width = 480, height = 480)
 with(household_power_cons_2day, hist(Global_active_power, col='red', main='Global Active Power',
                                      xlab='Global Active Power (kilowatts)'))
 dev.off()

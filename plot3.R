@@ -12,7 +12,7 @@ household_power_cons = transform(household_power_cons, datetime = strptime(paste
 household_power_cons_2day = subset(household_power_cons, Date=='2007-02-01' | Date=='2007-02-02')
 
 #plot3: line plot with 3 variables (sub_metering)
-png('./ExData_Plotting1/submetering_line_graph.png', width = 480, height = 480)
+png('./ExData_Plotting1/plot3.png', width = 480, height = 480)
 with(household_power_cons_2day, plot(datetime, Sub_metering_1, type='l', lwd=2,
                                      xlab='', ylab='Energy sub metering'))
 with(household_power_cons_2day, lines(datetime, Sub_metering_2, col='red', lwd=2))

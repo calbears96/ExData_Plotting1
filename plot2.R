@@ -13,7 +13,7 @@ household_power_cons_2day = subset(household_power_cons, Date=='2007-02-01' | Da
 
 #plot2: line plot of global active power vs. day of week
 
-png('./ExData_Plotting1/line_graph_power.png', width = 480, height = 480)
+png('./ExData_Plotting1/plot2.png', width = 480, height = 480)
 with(household_power_cons_2day, plot(datetime, Global_active_power, type='l', xlab='',
                                      ylab='Global Active Power (kilowatts)', lwd=2))
 dev.off()
